@@ -1,0 +1,229 @@
+body{
+    background-color: #adb2efc6; /* Light gray background for the entire page */
+    margin: 0; /* Removes default margin */
+    padding: 20px; /* Adds space around the content */
+}
+.blog-container{
+    font-family: Arial, sans-serif; /* Sets a clean, modern font */
+    max-width: 800px; /* Limits the width of the content */
+    margin-left: auto; /* Puts the container horizontally and towards the right*/
+    padding: 50px; /* Adds space inside the container */
+    background-color: #fff; /* White background for the content area */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.401); /* Subtle shadow for depth */
+}.blog-container h1{
+    font-size:30px;
+    color:darkgreen; /* Dark green color for the main heading */
+    text-align: center; /* Centers the main heading */
+    margin-bottom: 2rem; /* Adds space below the main heading */
+}
+.blog-meta{
+    font-size: 14px; /* Smaller font size for metadata */
+    color: #666; /* Lighter gray for less emphasis */
+    text-align: center; /* Centers the metadata */
+    margin-bottom: 1.5rem; /* Adds space below the metadata */
+}
+.blog-container p{
+    font-size: 16px; /* Sets a comfortable reading size for paragraphs */
+    line-height: 1.6; /* Increases line height for better readability */
+    color: #333; /* Dark gray text color for contrast */
+    margin-bottom: 1.5rem; /* Adds space below each paragraph */
+}
+.blog-container h2{
+    font-size: 24px; /* Sets a larger size for subheadings */
+    color:darkslateblue; /* Dark blue color for subheadings */
+    margin-top: 1.5rem; /* Adds space above subheadings */
+    margin-bottom: 1rem; /* Adds space below subheadings */
+}
+.social-share{
+    display:flex;
+    gap: 10px;
+    align-items: center;
+    color: #1e00ff; /* Blue color for links */
+    padding: 6px 14px;
+    border: 1px solid #1e00ff; /*makes the border color blue*/
+    border-radius: 4px;
+    background-color: #f0f4ff;
+    transition:ease 0.3s;
+    display: inline-block; /*Puts the links in a block structure*/
+}
+.social-share:hover{
+    background-color: #e0e8ff; /* Changes background on hover */
+    color: #000; /* Changes text color on hover */
+    border-color: #000; /* Changes border color on hover */
+}
+.comments-section{
+    border-radius: 8px; /* Rounded corners for the comments section */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.318); /* Subtle shadow for depth */
+    padding: 20px; /* Adds space inside the comments section */
+    background-color: #f9f9f977; /* Light gray background for the comments section */
+    margin-top: 2rem; /* Adds space above the comments section */
+}
+.comments-section p{
+    font-size: 16px; /* Sets a comfortable reading size for comments */
+    line-height: 1.6; /* Increases line height for better readability */
+    color: #333; /* Dark gray text color for contrast */
+    margin-bottom: 1rem; /* Adds space below each comment */
+}
+.post-list-container{
+    position: absolute; /* Positions the post list container */
+    background-color: #f0f4ff; /* Light blue background for the post list */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.401); /* Subtle shadow for depth */
+    display:flex;
+    flex-direction: column; /* Stacks the posts vertically */
+    gap: 20px; /* Adds space between each post */
+    padding: 20px; /* Adds space around the posts */
+    top:150px;;
+    left: 50px; /* To start from the top-left */
+    width:700px; /* Sets a fixed width for the post list */
+    height: 400px; /*Sets a fixed height for the post list*/
+}
+.post-list-container h3 {
+    font-size: 24px;
+    color: darkslateblue; /* Dark blue color for post titles */
+    margin-bottom: 10px; /* Adds space below the post title */
+    display: flex;
+    flex-direction: row; /* Stacks the post title vertically */
+    align-items:flex-start; /* Aligns the post title */
+    justify-content:center; /*Centers the post title horizontally */
+}
+#post-list{
+    width:100%; /* Adjusts the width to fit the content */
+    height: 100%; /* Makes the post list take full height */
+    overflow-y: auto; /* Adds vertical scroll if content overflows */
+    padding: 10px; /* Adds space inside the post list */
+    margin-top: 10px; /* Adds space above the post list */
+    position:relative; /* Fixes the position of the post list */
+    top: 15px; /* Positions the post list from the top */
+}
+.new-post-container{
+    position: absolute; /* Positions the post list container */
+    background-color: #f0f4ff; /* Light blue background for the post list */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.401); /* Subtle shadow for depth */
+    display:flex;
+    flex-direction: column; /* Stacks the posts vertically */
+    gap: 20px; /* Adds space between each post */
+    padding: 20px; /* Adds space around the posts */
+    top:700px;
+    left: 50px; /* To start from the top-left */
+    width:700px; /* Sets a fixed width for the post list */
+    height: 650px; /*Sets a fixed height for the post list*/
+}
+#new_post_form_heading{
+    font-size: 24px; /* Sets a larger size for the new post form heading */
+    color: rgb(139, 61, 114); /* Dark blue color for the new post form heading */
+    margin-bottom: 20px; /* Adds space below the new post form heading */
+    text-align: center; /* Centers the new post form heading */
+}
+.new-post-container h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.new-post-container form label {
+    display: block; /* Makes labels appear on their own line */
+    margin-bottom: 8px; /* Space below label */
+    font-weight: bold;
+    color: #555;
+}
+
+.new-post-container form input[type="text"],
+.new-post-container form textarea {
+    width: 100%; /* Makes input and textarea fill the container */
+    padding: 12px;
+    margin-bottom: 20px; /* Space below input/textarea */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners for input fields */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-size: 1rem;
+}
+
+.new-post-container form textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Minimum height for textarea */
+}
+
+.button-group {
+    display: flex; /* Use flexbox to align buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Align buttons to the right */
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line on smaller screens */
+    margin-top: 10px;
+}
+
+.new-post-container form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for buttons */
+}
+
+/* Specific button styles */
+.new-post-container form button.submit-post {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.new-post-container form button.submit-post:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.new-post-container form button.update-post {
+    background-color: #008CBA; /* Blue */
+    color: white;
+}
+
+.new-post-container form button.update-post:hover {
+    background-color: #007bb5;
+    transform: translateY(-2px);
+}
+
+.new-post-container form button.cancel-post {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.new-post-container form button.cancel-post:hover {
+    background-color: #da190b;
+    transform: translateY(-2px);
+}
+
+.new-post-container form button.delete-post {
+    background-color: #6c757d; /* Grey */
+    color: white;
+}
+
+.new-post-container form button.delete-post:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 770px) {
+    .top-content-area,
+    .new-post-container {
+        width: 100%; /* Full width on smaller screens */
+        margin: 0 auto; /* Center the content */
+        padding: 20px;
+    }
+
+    .button-group {
+        justify-content: center; /* Center buttons on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .button-group button {
+        width: 100%; /* Full width buttons on very small screens */
+        margin-bottom: 10px; /* Space between stacked buttons */
+    }
+}
